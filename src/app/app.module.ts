@@ -10,11 +10,12 @@ import { EffectsModule } from "@ngrx/effects";
 import { MaterialModule } from "./material.module";
 
 import { AppComponent } from "./app.component";
+import { GraphModule } from "./graph/graph.module";
+import { BottomSheetComponent, BottomSheetContent } from './bottom-sheet/bottom-sheet.component'
 import { reducers, metaReducers } from "./shared/state";
-import { GraphModule } from "./graph/graph.module"
 
 @NgModule( {
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, BottomSheetComponent, BottomSheetContent ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -25,8 +26,12 @@ import { GraphModule } from "./graph/graph.module"
     StoreModule.forRoot( reducers, { metaReducers } ),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot( [] ),
+    EffectsModule.forFeature( [ BottomSheetComponent ] ),
     MaterialModule,
     GraphModule
+  ],
+  entryComponents: [
+    BottomSheetContent
   ],
   bootstrap: [ AppComponent ]
 } )

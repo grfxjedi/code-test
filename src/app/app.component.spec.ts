@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from "./material.module";
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component'
 
 describe( 'AppComponent', () => {
   beforeEach( async( () => {
@@ -14,7 +15,8 @@ describe( 'AppComponent', () => {
         MaterialModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        BottomSheetComponent
       ],
     } ).compileComponents();
   } ) );
@@ -25,16 +27,16 @@ describe( 'AppComponent', () => {
     expect( app ).toBeTruthy();
   } );
 
-  it( `should have as title 'Code Test - Angular 8 w/ NgRx'`, () => {
+  it( `should have as title 'Code Test - Angular 8 w/ NgRx and Material'`, () => {
     const fixture = TestBed.createComponent( AppComponent );
     const app = fixture.debugElement.componentInstance;
-    expect( app.title ).toEqual( 'Code Test - Angular 8 w/ NgRx' );
+    expect( app.title ).toEqual( 'Code Test - Angular 8 w/ NgRx and Material' );
   } );
 
   it( 'should render title in a material toolbar', () => {
     const fixture = TestBed.createComponent( AppComponent );
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect( compiled.querySelector( 'mat-toolbar' ).textContent ).toContain( 'Code Test - Angular 8 w/ NgRx' );
+    expect( compiled.querySelector( 'mat-toolbar' ).textContent ).toContain( 'Code Test' );
   } );
 } );

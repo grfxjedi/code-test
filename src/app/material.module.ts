@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import {
   MatBadgeModule,
+  MatBottomSheetModule,
   MatButtonModule,
   MatCardModule,
   MatCheckboxModule,
@@ -32,6 +33,7 @@ import {
   imports: [],
   exports: [
     MatBadgeModule,
+    MatBottomSheetModule,
     MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
@@ -40,6 +42,7 @@ import {
     MatListModule,
     MatSidenavModule,
     MatSortModule,
+    MatProgressSpinnerModule,
     MatToolbarModule,
     MatTableModule
   ]

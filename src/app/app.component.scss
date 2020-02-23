@@ -15,8 +15,15 @@
         display: block;
         max-width: 100%;
         margin: 10px auto;
+        &.angular {
+          width: 70%
+        }
         &.ngrx {
-          width: 85%;
+          width: 57%;
+        }
+        &.material {
+          margin-top: 20px;
+          width: 52%;
         }
       }
     }

@@ -17,3 +17,6 @@
     </mat-card-title>
   </mat-card-header>
 </mat-card>
+<div class="loading" *ngIf="graph.length === 0">
+  <mat-progress-spinner mode="indeterminate" diameter="150"></mat-progress-spinner>
+</div>
