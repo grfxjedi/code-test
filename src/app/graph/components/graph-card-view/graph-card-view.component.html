@@ -1,0 +1,25 @@
+<div *ngIf="graph.length > 0" class="deck">
+  <mat-card *ngFor="let child of activeChild ? activeChild.children : graph[0].children" class="card">
+    <button mat-button [class.disabled]="!child.children" (click)="select.emit(child)">
+    </button>
+    <mat-card-header>
+      <mat-card-title>
+        <span *ngIf="!activeChild">Chapter </span>
+        <span *ngIf="activeChild && child.section_id && !child.objective_id">Section </span>
+        <span *ngIf="activeChild && child.objective_id">Objective </span>
+        <span>{{ child.chapter_id }}</span>
+        <span *ngIf="child.section_id">.{{ child.section_id }}</span>
+        <span *ngIf="child.objective_id">.{{ child.objective_id }}</span>
+        <span *ngIf="child.children" matBadge="{{ child.children.length }}" matBadgeSize="medium" matBadgeOverlap="false"></span>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <span *ngIf="child.children">{{ child.title }}</span>
+      <span *ngIf="!child.children">Exercise #{{ child.exercise_id }}</span>
+    </mat-card-content>
+    <mat-card-footer>
+      <span *ngIf="child.has_prereqs">{{ child.has_prereqs.length }}</span>
+      <span *ngIf="child.is_prereqs_to">{{ child.is_prereqs_to.length }}</span>
+    </mat-card-footer>
+  </mat-card>
+</div>

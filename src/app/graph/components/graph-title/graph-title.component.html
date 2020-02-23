@@ -1,0 +1,19 @@
+<mat-card *ngIf="graph.length > 0">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>
+        <mat-icon>book</mat-icon>
+        {{ graph[0].title }}
+      </h1>
+      <h2 *ngIf="activeChild">
+        <span>Chapter {{ activeChild.chapter_id }}</span>
+        <span *ngIf="activeChild.section_id">.{{ activeChild.section_id }}</span>
+        <span *ngIf="activeChild.objective_id">.{{ activeChild.objective_id }}</span>
+        <span> - {{ activeChild.title }}</span>
+        <button mat-icon-button (click)="select.emit(); $event.stopImmediatePropagation()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </h2>
+    </mat-card-title>
+  </mat-card-header>
+</mat-card>

@@ -1,0 +1,26 @@
+mat-card-title {
+  h3 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+mat-nav-list {
+  mat-list-item {
+    &:not(:first-of-type) {
+      border-top: 1px solid #efefef;
+    }
+    &.disabled{
+      pointer-events: none;
+    }
+    h4 {
+      font-weight: normal;
+      .mat-badge-content {
+        top: -5px;
+      }
+      .ids {
+        font-weight: bold;
+      }
+    }
+  }
+}

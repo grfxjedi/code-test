@@ -1,0 +1,26 @@
+<mat-card *ngIf="graph.length > 0">
+  <mat-card-header>
+    <mat-card-title>
+      <h3 *ngIf="!activeChild">Chapters</h3>
+      <h3 *ngIf="activeChild && !activeChild.children[0].objective_id">Sections</h3>
+      <h3 *ngIf="activeChild && activeChild.children[0].objective_id && activeChild.children[0].children">Objectives</h3>
+      <h3 *ngIf="activeChild && !activeChild.children[0].children">Exercises</h3>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let child of activeChild ? activeChild.children : graph[0].children" [class.disabled]="!child.children" (click)="select.emit(child)">
+        <h4>
+          <span class="ids">
+            <span>{{ child.chapter_id }}</span>
+            <span *ngIf="child.section_id">.{{ child.section_id }}</span>
+            <span *ngIf="child.objective_id">.{{ child.objective_id }}</span>
+            )
+          </span>
+          <span *ngIf="child.children" matBadge="{{ child.children.length }}" matBadgeSize="small" matBadgeOverlap="false">{{ child.title }}</span>
+          <span *ngIf="!child.children">Exercise #{{ child.exercise_id }}</span>
+        </h4>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-card-content>
+</mat-card>

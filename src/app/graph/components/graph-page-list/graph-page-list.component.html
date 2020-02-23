@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <app-graph-title
+      [graph]="graph$ | async"
+      [activeChild]="activeChild$ | async"
+      (select)="resetGraph()">
+    </app-graph-title>
+    <app-graph-list-view
+      [graph]="graph$ | async"
+      [activeChild]="activeChild$ | async"
+      (select)="onSelect($event)">
+    </app-graph-list-view>
+  </div>
+</div>
