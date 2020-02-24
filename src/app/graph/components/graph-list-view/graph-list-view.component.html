@@ -15,7 +15,7 @@
             <span>{{ child.chapter_id }}</span>
             <span *ngIf="child.section_id">.{{ child.section_id }}</span>
             <span *ngIf="child.objective_id">.{{ child.objective_id }}</span>
-            )
+            <span>)</span>
           </span>
           <span *ngIf="child.children" matBadge="{{ child.children.length }}" matBadgeSize="small" matBadgeOverlap="false">{{ child.title }}</span>
           <span *ngIf="!child.children">Exercise #{{ child.exercise_id }}</span>

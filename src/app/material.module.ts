@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import {
   MatBadgeModule,
   MatBottomSheetModule,
@@ -43,8 +43,9 @@ import {
     MatSidenavModule,
     MatSortModule,
     MatProgressSpinnerModule,
+    MatTableModule,
     MatToolbarModule,
-    MatTableModule
+    MatTreeModule
   ]
 } )
 export class MaterialModule { }

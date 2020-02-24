@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { GraphListComponent } from './graph-list-view.component';
+import { GraphTreeComponent } from './graph-tree-view.component';
 
-describe( 'Component: GraphList', () => {
+describe( 'Component: GraphTree', () => {
   it( 'should create an instance', () => {
-    const component = new GraphListComponent();
+    const component = new GraphTreeComponent();
     expect( component ).toBeTruthy();
   } );
 } );

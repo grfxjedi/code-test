@@ -1,6 +1,6 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { createSelector, createReducer, on, Action } from '@ngrx/store';
-import { Graph } from "../../graph/graph.model";
+import { Graph } from '../../graph/graph.model';
 import * as GraphActions from '../../graph/graph.actions';
 
 

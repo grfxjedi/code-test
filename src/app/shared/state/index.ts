@@ -1,4 +1,4 @@
-import { ActionReducerMap, createSelector, MetaReducer } from "@ngrx/store";
+import { ActionReducerMap, createSelector, MetaReducer } from '@ngrx/store';
 import * as fromGraph from './graph.reducer';
 
 export interface State {

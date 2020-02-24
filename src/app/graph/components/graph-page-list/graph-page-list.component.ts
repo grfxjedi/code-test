@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { Graph } from "../../graph.model";
+import { Graph } from '../../graph.model';
 import * as fromRoot from 'src/app/shared/state';
 import * as GraphActions from '../../graph.actions';
 

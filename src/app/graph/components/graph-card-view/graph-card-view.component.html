@@ -17,9 +17,9 @@
       <span *ngIf="child.children">{{ child.title }}</span>
       <span *ngIf="!child.children">Exercise #{{ child.exercise_id }}</span>
     </mat-card-content>
-    <mat-card-footer>
+    <!-- <mat-card-footer>
       <span *ngIf="child.has_prereqs">{{ child.has_prereqs.length }}</span>
       <span *ngIf="child.is_prereqs_to">{{ child.is_prereqs_to.length }}</span>
-    </mat-card-footer>
+    </mat-card-footer> -->
   </mat-card>
 </div>

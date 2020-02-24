@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
-import { Effect, Actions, ofType } from "@ngrx/effects";
-import { of, EMPTY } from "rxjs";
+import { Injectable } from '@angular/core';
+import { Effect, Actions, ofType } from '@ngrx/effects';
+import { of, EMPTY } from 'rxjs';
 import {
   mergeMap,
   map,
@@ -9,10 +9,10 @@ import {
   exhaustMap,
   switchMap,
   tap
-} from "rxjs/operators";
+} from 'rxjs/operators';
 
-import * as GraphActions from "./graph.actions";
-import { GraphService } from "./graph.service";
+import * as GraphActions from './graph.actions';
+import { GraphService } from './graph.service';
 
 @Injectable()
 export class GraphEffects {

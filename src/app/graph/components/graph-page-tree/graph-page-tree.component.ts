@@ -7,11 +7,11 @@ import * as fromRoot from 'src/app/shared/state';
 import * as GraphActions from '../../graph.actions';
 
 @Component( {
-  selector: 'app-graph-page-card',
-  templateUrl: './graph-page-card.component.html',
-  styleUrls: [ './graph-page-card.component.scss' ]
+  selector: 'app-graph-page-tree',
+  templateUrl: './graph-page-tree.component.html',
+  styleUrls: [ './graph-page-tree.component.scss' ]
 } )
-export class GraphPageCardComponent implements OnInit {
+export class GraphPageTreeComponent implements OnInit {
   graph$: Observable<Graph[]>;
   activeChild$: Observable<any>;
 
@@ -28,16 +28,6 @@ export class GraphPageCardComponent implements OnInit {
 
   getGraph () {
     this.store.dispatch( GraphActions.enter() );
-  }
-
-  onSelect ( child: Graph ) {
-    if ( child.children ) {
-      this.store.dispatch( GraphActions.selectChild( { child } ) );
-    }
-  }
-
-  resetGraph () {
-    this.store.dispatch( GraphActions.clearSelection() );
   }
 
 }
