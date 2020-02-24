@@ -1,6 +1,7 @@
 <div *ngIf="graph.length > 0" class="deck">
-  <mat-card *ngFor="let child of activeChild ? activeChild.children : graph[0].children" class="card">
-    <button mat-button [class.disabled]="!child.children" (click)="select.emit(child)">
+  <mat-card *ngFor="let child of activeChild ? activeChild.children : graph[0].children" class="card" [class.disabled]="!loaded">
+    <!-- <button mat-button [class.disabled]="!child.children" (click)="select.emit(child)"> -->
+    <button mat-button [class.disabled]="!child.children" (click)="selectCard(child);">
     </button>
     <mat-card-header>
       <mat-card-title>
