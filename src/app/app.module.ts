@@ -21,7 +21,7 @@ import { reducers, metaReducers } from './shared/state';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot( [
-      { path: '', pathMatch: 'full', redirectTo: '/list' }
+      { path: '', pathMatch: 'full', redirectTo: '/tree' }
     ] ),
     StoreModule.forRoot( reducers, { metaReducers } ),
     StoreDevtoolsModule.instrument(),
