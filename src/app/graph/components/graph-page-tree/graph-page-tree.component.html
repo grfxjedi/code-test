@@ -3,10 +3,11 @@
     <app-graph-title
       [graph]="graph$ | async"
       [activeChild]="activeChild$ | async"
-      (select)="resetGraph()">
+      (reset)="resetGraph()">
     </app-graph-title>
     <app-graph-tree-view
-      [graph]="graph$ | async">
+      [graph]="graph$ | async"
+      (reset)="resetGraph()">
     </app-graph-tree-view>
   </div>
 </div>

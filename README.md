@@ -7,7 +7,7 @@ This is built to show an example of a project using Angular 8 w/ NgRx
 ## Prerequisites
 You will need to have Node.js installed on your development machine.
 
-* For Node.js and NPM, I prefer to use the [Node Version Manager (NVM)](https://github.com/creationix/nvm). This project was built using Node v8.11.3 and NPM v6.9.0
+* For Node.js and NPM, I prefer to use the [Node Version Manager (NVM)](https://github.com/creationix/nvm). This project was built using Node v12.1.0 and NPM v6.13.7
 * **OR** you can download and install Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
 
 

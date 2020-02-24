@@ -9,5 +9,5 @@ import { Graph } from '../../graph.model';
 export class GraphTitleComponent {
   @Input() graph: Graph[];
   @Input() activeChild: Graph;
-  @Output() select = new EventEmitter();
+  @Output() reset = new EventEmitter();
 }

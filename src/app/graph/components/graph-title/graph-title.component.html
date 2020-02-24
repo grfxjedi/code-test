@@ -10,7 +10,7 @@
         <span *ngIf="activeChild.section_id">.{{ activeChild.section_id }}</span>
         <span *ngIf="activeChild.objective_id">.{{ activeChild.objective_id }}</span>
         <span> - {{ activeChild.title }}</span>
-        <button mat-icon-button (click)="select.emit(); $event.stopImmediatePropagation()">
+        <button mat-icon-button (click)="reset.emit(); $event.stopImmediatePropagation()">
           <mat-icon>close</mat-icon>
         </button>
       </h2>

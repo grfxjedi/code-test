@@ -26,8 +26,15 @@ export class GraphPageTreeComponent implements OnInit {
     this.getGraph();
   }
 
+  ngOnDestroy (): void {
+    this.resetGraph();
+  }
+
   getGraph () {
     this.store.dispatch( GraphActions.enter() );
   }
 
+  resetGraph () {
+    this.store.dispatch( GraphActions.clearSelection() );
+  }
 }

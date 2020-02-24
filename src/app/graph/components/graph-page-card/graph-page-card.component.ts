@@ -26,6 +26,10 @@ export class GraphPageCardComponent implements OnInit {
     this.getGraph();
   }
 
+  ngOnDestroy (): void {
+    this.resetGraph();
+  }
+
   getGraph () {
     this.store.dispatch( GraphActions.enter() );
   }
