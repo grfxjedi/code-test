@@ -11,7 +11,7 @@ import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { GraphModule } from './graph/graph.module';
-import { BottomSheetComponent, BottomSheetContent } from './bottom-sheet/bottom-sheet.component'
+import { BottomSheetComponent, BottomSheetContent } from './bottom-sheet/bottom-sheet.component';
 import { reducers, metaReducers } from './shared/state';
 
 @NgModule( {
