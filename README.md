@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
-This is built to show an example of a project using Angular 8 w/ NgRx and Material
+This is built to show an example of a project using Angular 9 w/ NgRx and Material
 
 ## Requirements
 

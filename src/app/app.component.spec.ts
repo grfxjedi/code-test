@@ -27,10 +27,10 @@ describe( 'AppComponent', () => {
     expect( app ).toBeTruthy();
   } );
 
-  it( `should have as title 'Code Test - Angular 8 w/ NgRx and Material'`, () => {
+  it( `should have as title 'Code Test - Angular 9 w/ NgRx and Material'`, () => {
     const fixture = TestBed.createComponent( AppComponent );
     const app = fixture.debugElement.componentInstance;
-    expect( app.title ).toEqual( 'Code Test - Angular 8 w/ NgRx and Material' );
+    expect( app.title ).toEqual( 'Code Test - Angular 9 w/ NgRx and Material' );
   } );
 
   it( 'should render title in a material toolbar', () => {

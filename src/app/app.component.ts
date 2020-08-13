@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.scss' ]
 } )
 export class AppComponent {
-  title = 'Code Test - Angular 8 w/ NgRx and Material';
+  title = 'Code Test - Angular 9 w/ NgRx and Material';
   links = [
     { path: '/tree', icon: 'account_tree', label: 'Tree View' },
     { path: '/card', icon: 'grid_on', label: 'Card View' },
